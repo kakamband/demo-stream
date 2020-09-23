@@ -2,13 +2,20 @@
 <html>
 
 <head>
+  <style>
+.my-video-dimensions {
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+      }
+</style>
   <link href="https://vjs.zencdn.net/6.2.0/video-js.min.css" rel="stylesheet">
   <!-- If you'd like to support IE8 -->
   <!--<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>-->
 </head>
 
 <body>
-<video id="my-video" class="video-js" controls preload="auto" width="960" height="400"
+<video id="my-video" class="video-js my-video-dimensions" controls preload="auto" 
        data-setup="{}">
   <source src="/video.m3u8" type="application/x-mpegURL">
     <p class="vjs-no-js">
