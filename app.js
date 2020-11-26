@@ -50,7 +50,7 @@ console.log('Generate HSL segments from video file...')
 
 // Generate HLS segments from video file
 fs.mkdir('./videos', function () {
-  ffmpeg('./e93ac808ee00a8342d2ff19a5978ca7027281914-360p.mp4')
+  ffmpeg('./video.mp4')
   // set output format
     .format('hls')
     // set bitrate
